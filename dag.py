@@ -34,3 +34,6 @@ t1 = BashOperator(
     depends_on_past=False,
     priority_weight=2**31 - 1,
     do_xcom_push=False)
+
+## smoke test for airflow webserver
+
