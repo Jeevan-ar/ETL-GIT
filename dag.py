@@ -4,10 +4,7 @@ import datetime
 from airflow import DAG
 
 # pylint: disable=g-import-not-at-top
-try:
-  from airflow.providers.standard.operators.bash import BashOperator
-except ImportError:
-  from airflow.operators.bash_operator import BashOperator
+from airflow.providers.standard.operators.bash import BashOperator
 # pylint: enable=g-import-not-at-top
 
 default_args = {
